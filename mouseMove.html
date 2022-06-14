@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Add New User</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--- Author: Lamareeb June 13, 2022---->
+<style>
+.mover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: blueviolet;
+    transform: ;
+    position: absolute;
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+}
+
+
+</style>
+</head>
+<body>
+<div class="mover"></div>
+</body>
+</html>
+<script>
+let root = document.documentElement;    
+
+    root.addEventListener("mousemove", e => {
+    root.style.setProperty('--mouse-x', e.clientX + "px");
+    root.style.setProperty('--mouse-y', e.clientY + "px");
+    })
+
+
+</script>
